@@ -2,9 +2,8 @@
 
 
 
-# To run our website you will need to do the following ( line 10 ):
+# To run our website you will need to do the following :
 
-# Guidance and Instructions for our website ( line 35 ):
 
 
 1. Install Node.js and npm on your computer. Node.js is a JavaScript runtime environment that allows you to run JavaScript on your computer, and npm is the package manager for Node.js that allows you to install third-party packages and libraries. You can download and install Node.js and npm from the official website: https://nodejs.org/
