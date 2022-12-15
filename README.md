@@ -52,7 +52,9 @@
   
 7.To post a job listing as an employer, look for an option on the page to create a new listing on the listing page . Click on this option and fill out the required information about the job, such as the job title, location, and description. Submit the listing to make it available for others to see.
 
-8.You can also access other features of the website, such as your account settings. We suggest you explore the website to discover all of the features it has to offer.
+Thats all. Thank you.
   
-  Thank you.
+From,
+Eyad and Pranav
 
+.
