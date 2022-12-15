@@ -22,10 +22,24 @@ const Login = (props) => {
 
     if (auth_one.user) navigate("/views");
   }, [auth_one.user]);
-
+/**
+ * Handles form submission by extracting the email and password values from the form data
+ * and calling the `auth.signInWithEmailAndPassword()` function with these values.
+ * 
+ * @param {Event} event - The form submission event
+ * @returns {void}
+ */
   const handleFormSubmission = (event) => {
     event.preventDefault();
+/**
 
+Handles form submission by extracting the email and password values from the form data
+and calling the auth_one.signInWithEmailAndPassword() function with these values.
+If the sign-in is successful, the user is redirected to the /view route. If there is
+an error, the error message is logged to the console.
+@param {Event} event - The form submission event
+@returns {void}
+*/
     const { email, password } = Object.fromEntries(new FormData(event.target));
     auth_one
       .signInWithEmailAndPassword(auth, email, password)
