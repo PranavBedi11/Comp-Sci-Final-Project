@@ -1,0 +1,53 @@
+
+
+.nav-bar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: hsl(0 0% 15%);
+}
+
+
+span{
+    color: orange;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    font-style: bold;
+    margin-left: 5rem;
+}
+
+.right{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.list{
+    flex: 10
+}
+
+.list>ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+}
+
+.list> ul > li:hover{
+    cursor: pointer;
+    color: orange;
+    transition: 400ms;
+}

@@ -1,0 +1,35 @@
+.post{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    color: black;
+}
+
+.post h1{
+    text-align: center;
+}
+
+.post h3{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.inputGp input{
+    border-radius: 10rem;
+}
+
+.inputGp textarea{
+   width: 100%;
+   border-radius: 20px;
+   align-self: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 40px;
+   border-color:black ;
+}
+
+.txt{
+    text-align: left;
+}

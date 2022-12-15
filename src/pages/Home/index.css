@@ -1,0 +1,133 @@
+header{
+    position: relative;
+	padding-left: 4.5rem;
+    overflow: hidden;
+	background-color: hsl(0 0% 15%);
+	
+
+}
+
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+	
+	
+	
+
+}
+
+.left-side h1{
+    font-size: 100px;
+    color: white;
+}
+
+.left-side h3{
+    margin-top: 2rem;
+    font-size: 35px;
+    color: white;
+}
+span{
+    color: orange;
+}
+
+.right-side img{
+    
+    width: 45rem;
+    height: 30rem;
+}
+
+.home-btn {
+    display: inline-block;
+    color: white;
+    background: orange;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    border:1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.home-btn:hover{
+    background: transparent;
+    border-color:white;
+    cursor: pointer;
+}
+
+
+.service{
+	background-color: rgb(46, 43, 43);
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.title p{
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin-left: 12rem;
+    font-size: 1.25rem;
+}
+
+
+.box {
+	display: flex;
+    justify-content: center;
+   
+}
+
+.card{
+	height: 365px;
+	width: 500px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: orange;
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: white;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+
+.card .button{
+	background-color:orange;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid orange;
+	cursor: pointer;
+}
