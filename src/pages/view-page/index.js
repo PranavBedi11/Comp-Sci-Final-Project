@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../../config/fire";
+import "./style.css"
 /**
 
  * The View component is a functional React component that displays a list of posts from a
@@ -14,13 +15,11 @@ import { auth, db } from "../../config/fire";
  * delete button is rendered for the post, which allows the user to delete the post when clicked.
  * The deletePost function is used to delete the post from the database.
  *
- * @param {boolean} isAuth A boolean that indicates whether or not the current user is authenticated.
- *
  * @returns {React.Element} A React element representing the View component.
 
  */
 
-function View({ isAuth }) {
+function View() {
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
 
@@ -31,7 +30,7 @@ function View({ isAuth }) {
     };
 
     getPosts();
-  }, [deletePost]);
+  }, );
 
 
 
@@ -45,39 +44,31 @@ function View({ isAuth }) {
      * 
      * @returns {Promise} A promise that resolves when the item is deleted.
      */
-  const deletePost = async (id) => {
-    const postDoc = doc(db, "posts", id);
-    await deleteDoc(postDoc);
-  };
-  return (
-    <div className="ViewPage">
-      {postLists.map((post) => {
-        return (
-          <div className="post">
-            <div className="postHeader">
-              <div className="title">
-                <h1> {post.title}</h1>
+     const deletePost = async (id) => {
+      const postDoc = doc(db, "posts", id);
+      await deleteDoc(postDoc);
+    };
+    return (
+      <div className="ViewPage">
+      <h1>All Active Jobs Here</h1>
+        {postLists.map((post) => {
+          return (
+            <div className="post">
+              <div className="postHeader">
+                <div className="title">
+                  <h1> {post.title}</h1>
+                </div>
               </div>
+              <div className="postTextContainer"> {post.postText} </div>
+              <h3>{post.author.email}</h3>
               <div className="deletePost">
-                {isAuth && post.author.id === auth.currentUser.uid && (
-                  <button
-                    onClick={() => {
-                      deletePost(post.id);
-                    }}
-                  >
-                    {" "}
-                    &#128465;
-                  </button>
-                )}
+                  {post.author.id == auth.currentUser.uid && (<button onClick={() => {deletePost(post.id)}}  > &#128465; </button>)}
               </div>
             </div>
-            <div className="postTextContainer"> {post.postText} </div>
-            <h3>@{post.author.email}</h3>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+          );
+        })}
+      </div>
+    );
+  }
 
 export default View;
