@@ -29,7 +29,7 @@ const App = () => (
         <Route path="/signupe" element={<Singupe />} />
         <Route
           path="/signup"
-          element={<SignUp title="Sign Up As Freelancer" />}
+          element={<SignUp/>}
         />
         <Route path="/login" element={<Login/>} />
       </Routes>
