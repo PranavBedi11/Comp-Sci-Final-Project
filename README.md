@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Comp-Sci-Final-Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+# To run our website you will need to do the following :
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Install Node.js and npm on your computer. Node.js is a JavaScript runtime environment that allows you to run JavaScript on your computer, and npm is the package manager for Node.js that allows you to install third-party packages and libraries. You can download and install Node.js and npm from the official website: https://nodejs.org/
 
-### `npm test`
+2. Once you have Node.js and npm installed, you can use the npm command to install the React library. Open a terminal or command prompt and run the following command: npm install react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. After installing the React library, you can create a new React project by running the following command: npx create-react-app <project-name>, where <project-name> is the name of your project. This will create a new directory with the given name and generate the necessary files and folders for a React project inside it.
 
-### `npm run build`
+4. To run your React code, navigate to the project directory and run the following command: npm start. This will start a development server that will automatically recompile your code whenever you make changes and refresh the page in your browser to reflect those changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. To install files and branches from GitHub that will be used, you will need to follow these additional steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Navigate the repository on GitHub that contains the files and branches you will need to install.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7.If you want to install a specific branch, go to the "Branch" dropdown menu and select the branch you want to install.  Which will be the " everything documented " branch.
 
-### `npm run eject`
+8.Click on the "Clone or download" button and copy the URL for the repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+9.In your terminal or command prompt, navigate to the project directory where you want to install the files and run the following command: git clone <repository-url>, where <repository-url> is the URL you copied in the previous step. This will download the files from the repository and create a new local Git repository in your project directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+10. After installing the files, you may need to run npm install to install any dependencies listed in the project's package.json file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+11. once done you should be able to run the code and acces the website.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  
+  
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ # Guidance and Instructions for our website:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  
+  
+1.Once you have accessed the website you will be on the homepage.
 
-### Code Splitting
+2.On the homepage, you will see a signup and login option for Employers and Freelancers . Click on the signup option to make an account and fill out the required information, such as your email address, and password for whatever role you want to fill in.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.Once you have created an account, you can log in by clicking on the login option on the homepage. Enter your email address and password to log in.
 
-### Analyzing the Bundle Size
+4.After logging in, you will be able to access various features of the website. 
+  
+5. You can click on the link for the job listings section and you will be taken to a page with a list of available jobs. Where you can use the search options on the page to narrow down the list of jobs based on your criteria. 
+  
+6.To find jobs as a Freelancer, use navigation bar on the listingspage. This bar as said will typically provide you with job listings from the website.
+  
+7. To signup for the job all you have to do is contact that employer through his listing/post to apply for the job. If both parties agree on the job, then the employer has the option to delete the post if satisfied with what is acquired but if not or if there is some other reason then the employer has the option to keep the post/listing up to keep recieving potentional freelancer requests.
+  
+7.To post a job listing as an employer, look for an option on the page to create a new listing on the listing page . Click on this option and fill out the required information about the job, such as the job title, location, and description. Submit the listing to make it available for others to see.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Thats all. Thank you.
+  
+From,
+Eyad and Pranav
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+.
+(Same as the main branch just adding it over here)
