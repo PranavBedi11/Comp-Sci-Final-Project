@@ -16,6 +16,11 @@ import { Link } from "react-router-dom";
 const Login = (props) => {
   const auth_one = useAuth();
   const navigate = useNavigate();
+/**
+
+Logs the current auth_one.user value to the console whenever it changes.
+@returns {void}
+*/
 
   useEffect(() => {
     console.log(auth_one.user);
