@@ -44,9 +44,9 @@
 
 4.After logging in, you will be able to access various features of the website. 
   
-5.To find jobs as a Freelancer, look for a navigation bar on the page. This bar will typically provide you with job listings from the website.
-
-6. You click on the link for the job listings section and you will be taken to a page with a list of available jobs. Where can use the search and filter options on the page to narrow down the list of jobs based on your criteria. 
+5. You can click on the link for the job listings section and you will be taken to a page with a list of available jobs. Where you can use the search options on the page to narrow down the list of jobs based on your criteria. 
+  
+6.To find jobs as a Freelancer, use navigation bar on the listingspage. This bar as said will typically provide you with job listings from the website.
   
 7. To signup for the job all you have to do is contact that employer through his listing/post to apply for the job. If both parties agree on the job, then the employer has the option to delete the post if satisfied with what is acquired but if not or if there is some other reason then the employer has the option to keep the post/listing up to keep recieving potentional freelancer requests.
   
