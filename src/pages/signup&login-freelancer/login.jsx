@@ -5,7 +5,14 @@ import { useEffect } from "react";
 import { useAuth } from "./UserAuthContext";
 import { auth } from "../../config/fire";
 import { Link } from "react-router-dom";
-
+/**
+ * The `login` component is a form that allows users to log into an exisiting account. It displays
+ * buttons that allow users to login using third-party authentication providers, such as
+ * Google or Facebook. It also includes fields for entering an email and password, which
+ * are used to login for a local account.
+ *
+ * @returns {JSX.Element} A React component that renders the login form.
+ */
 const Login = (props) => {
   const auth_one = useAuth();
   const navigate = useNavigate();
