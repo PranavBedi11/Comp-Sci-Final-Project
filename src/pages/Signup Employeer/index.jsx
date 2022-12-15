@@ -63,7 +63,7 @@ const Singupe = () => {
 
         <button className='btn' onClick={register}> Create User</button>
         <div className="singup-link">
-              <p>Have An Account? <Link className="go-back" to='/'>Login</Link> </p>
+              <p>Have An Account? <Link className="go-back" to='/logine'>Login</Link> </p>
         </div>
       </div>
 
