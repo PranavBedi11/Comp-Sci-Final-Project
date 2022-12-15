@@ -11,7 +11,17 @@ import { FcGoogle } from 'react-icons/fc';
 
 
 const UserAuthContext = createContext();
-
+/**
+ * The `UserAuthProvider` component is a wrapper that provides authentication-related context
+ * to its children. It uses the `useAuthState()` hook to get the current user, loading state,
+ * and error state from the `firebaseAuthService`, and it provides this information to its
+ * children via the `UserAuthContext` context object. Additionally, it provides methods for
+ * signing in with email and password or with a third-party authentication provider.
+ *
+ * @param {Object} props - The component's props
+ * @param {Object} props.children - The component's children
+ * @returns {JSX.Element} A React component that wraps its children in the `UserAuthContext` provider.
+ */
 function UserAuthProvider({ children }) {
 	const { user, loading, error } = useAuthState(auth);
 
