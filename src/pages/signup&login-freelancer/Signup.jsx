@@ -16,6 +16,11 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   const auth_one = useAuth();
   const navigate = useNavigate();
+/**
+
+Logs the current auth_one.user value to the console whenever it changes.
+@returns {void}
+*/
 
   useEffect(() => {
     console.log(auth_one.user);
@@ -29,7 +34,15 @@ const SignUp = () => {
  */
   const handleFormSubmission = (event) => {
     event.preventDefault();
+/**
 
+Handles form submission by extracting the email and password values from the form data
+and calling the auth_one.signInWithEmailAndPassword() function with these values.
+If the sign-in is successful, the user is redirected to the /view route. If there is
+an error, the error message is logged to the console.
+@param {Event} event - The form submission event
+@returns {void}
+*/
     const { email, password } = Object.fromEntries(new FormData(event.target));
     auth_one
       .createUserWithEmailAndPassword(auth, email, password)
