@@ -4,14 +4,27 @@ import "./index.css"
 import { useEffect } from "react";
 import { useAuth } from "./UserAuthContext";
 import { auth } from "../../config/fire";
-
+/**
+ * The `SignUp` component is a form that allows users to create a new account. It displays
+ * buttons that allow users to sign up using third-party authentication providers, such as
+ * Google or Facebook. It also includes fields for entering an email and password, which
+ * are used to sign up for a local account.
+ *
+ * @returns {JSX.Element} A React component that renders the sign-up form.
+ */
 const SignUp = (props) => {
   const auth_one = useAuth();
 
   useEffect(() => {
     console.log(auth_one.user);
   }, [auth_one.user]);
-
+/**
+ * Handles form submission by extracting the email and password values from the form data
+ * and calling the `auth.signInWithEmailAndPassword()` function with these values.
+ * 
+ * @param {Event} event - The form submission event
+ * @returns {void}
+ */
   const handleFormSubmission = (event) => {
     event.preventDefault();
 
